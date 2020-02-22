@@ -43,3 +43,4 @@ with open(output_file, "w", newline="") as datafile:
     writer = csv.writer(datafile)
     writer.writerow(["Metric", "Value"])
     writer.writerows(cleaned_report)
+    
