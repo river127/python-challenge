@@ -48,15 +48,15 @@ electionResults = zip(candidateNames, candidateTally, candidatePercentVote)
 
 print("   ")
 print("Election Results")
-print("---------------------------------------------")
+print("-------------------------------------------")
 print(f'Total Votes: {totalVotes}')
-print("---------------------------------------------")
+print("-------------------------------------------")
 
 for candidate, votes, pctVotes in electionResults:
     print('{}: {:.2%}  ({})'.format(candidate,pctVotes,votes))
     if votes == winningTally:
         winningCandidate = candidate
 
-print("---------------------------------------------")
+print("-------------------------------------------")
 print(f'Winner: {winningCandidate}')
-print("---------------------------------------------")
+print("-------------------------------------------")
